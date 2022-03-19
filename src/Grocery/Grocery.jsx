@@ -4,13 +4,13 @@ import GroceryList from './GroceryList';
 const Grocery=()=>{
 const [data, setData]=useState([]);
 
-const handleTodo=(title)=>{
+const handleItem=(title)=>{
     let payLoad={
         id:Math.random(),
         status:false,
         title:title,
     }
-    setData([...data, payLoad])
+    setData([...data, handleItem])
     console.log('title ', title, data)
 }
 const handleToggle =(id)=>{
